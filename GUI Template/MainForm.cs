@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;   // dragging form
 using GUI_Template.Secondary_Forms_Centre;
 using GUI_Template.Secondary_Forms_Right;
+using GUI_Template.Popups;
 
 namespace GUI_Template
 {
@@ -154,6 +155,8 @@ namespace GUI_Template
             ActivateButton((Button)sender, ThemeColors.color3);
             CloseForms();
             OpenCentreForm(new formCentre3());
+            popupExceptionForm1 form = new popupExceptionForm1("Header", "Body", false);
+            form.Show();
             
         }
 
